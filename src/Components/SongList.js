@@ -3,12 +3,12 @@ import Song from "./Song"
 
 const SongList = ({songs}) => {
 
-    const songItems =songs.feed.entry.map((song) => {
-            return <Song song={song} key={songs.feed.entry.id.attributes["im:id"]} />
+    const songItems =songs.feed.entry.map((song, index) => {
+            return <Song song={song} key={index} />
     });
 
         return (
-        <ul>{songItems}</ul>
+        <ol>{songItems}</ol>
     )
 }
 

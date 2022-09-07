@@ -23,7 +23,7 @@ return (
   <>
     <h2>Top 20</h2>
 
-    {songs.feed ?     <SongList songs={songs} />: null}
+    {songs.feed ?   <SongList songs={songs} />: null}
   </>
 )
 
